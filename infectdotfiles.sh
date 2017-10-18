@@ -8,8 +8,8 @@
 
 dir=~/dotfiles                    # dotfiles directory
 olddir=~/dotfiles_old             # old dotfiles backup directory
-files="bashrc vimrc vim zshrc"    # list of files/folders to symlink in homedir
-
+files="vimrc vim tmux.conf"    # list of files/folders to symlink in homedir
+# bashrc removed from files
 ##########
 
 # create dotfiles_old in homedir
@@ -30,7 +30,7 @@ for file in $files; do
     ln -s $dir/$file ~/.$file
 done
 
-" #---------------------- Training Wheels Lock ---------------------#
+: <<'TrainingWheels'
 
 install_zsh () {
 # Test to see if zshell is installed.  If it is:
@@ -67,3 +67,5 @@ fi
 install_zsh
 
 " #---------------------- Training Wheels Lock ---------------------#
+
+TrainingWheels
