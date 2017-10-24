@@ -106,3 +106,4 @@ install_dot "ssh/rc"
 if [ ! -e $HOME/.ssh/authorized_keys ]; then
   umask_mine touch "$HOME/.ssh/authorized_keys"
 fi
+
