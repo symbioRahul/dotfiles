@@ -1,6 +1,6 @@
 " .Vimrc
-"
-" Maintained by Rahul Rawat <mail@rahulrawat.net>
+" Maintainer : Rahul Rawat
+" Email : mail@rahulrawat.net
 "
 " To start vim without using this .vimrc file, use:
 "     vim -u NORC
@@ -71,4 +71,25 @@ nnoremap <leader>i :set list!<cr>
 " Toggle line numbers
 nnoremap <leader>N :setlocal number!<cr>
 
+" Gruv Theme -----------------------------------------------------------------|
+colorscheme gruvbox
+let g:gruvbox_contrast_dark="hard"
+set background=dark    " Setting dark mode
+map <silent> <F4> :call gruvbox#hls_toggle()<CR>
+imap <silent> <F4> <ESC>:call gruvbox#hls_toggle()<CR>a
+vmap <silent> <F4> <ESC>:call gruvbox#hls_toggle()<CR>gv
+
+nnoremap <silent> <CR> :call gruvbox#hls_hide()<CR><CR>
+
+nnoremap * :let @/ = ""<CR>:call gruvbox#hls_show()<CR>*
+nnoremap / :let @/ = ""<CR>:call gruvbox#hls_show()<CR>/
+nnoremap ? :let @/ = ""<CR>:call gruvbox#hls_show()<CR>?
+" ----------------------------------------------------------------------------|
+
+" You Complete Me ------------------------------------------------------------|
+" Stop making mistakes and hit Tab!
+imap <Tab> <C-P>
+let g:ycm_autoclose_preview_window_after_insertion = 1
+let g:ycm_autoclose_preview_window_after_completion = 1
+" ----------------------------------------------------------------------------|
 

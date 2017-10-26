@@ -92,6 +92,7 @@ install_dot "screenrc"
 install_dot "tmux.conf"
 install_dot "vim"
 install_dot "vimrc"
+# intently removed bashrc to protect work files
 
 # The SSH folder most likely already exists, and in any event we don't want to
 # manage it ourselves. If we are creating it for the first time, however, we
