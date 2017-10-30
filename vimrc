@@ -64,6 +64,8 @@ set nrformats=                  " make <C-a> and <C-x> play well with
 set shortmess+=I                " hide the launch screen
 set clipboard=unnamed           " normal OS clipboard interaction
 set autoread                    " automatically reload files changed outside of Vim
+let mapleader=","               " leader is comma
+
 
 " Toggle show/hide invisible chars
 nnoremap <leader>i :set list!<cr>
@@ -78,18 +80,18 @@ set background=dark    " Setting dark mode
 map <silent> <F4> :call gruvbox#hls_toggle()<CR>
 imap <silent> <F4> <ESC>:call gruvbox#hls_toggle()<CR>a
 vmap <silent> <F4> <ESC>:call gruvbox#hls_toggle()<CR>gv
-
 nnoremap <silent> <CR> :call gruvbox#hls_hide()<CR><CR>
-
 nnoremap * :let @/ = ""<CR>:call gruvbox#hls_show()<CR>*
 nnoremap / :let @/ = ""<CR>:call gruvbox#hls_show()<CR>/
 nnoremap ? :let @/ = ""<CR>:call gruvbox#hls_show()<CR>?
-" ----------------------------------------------------------------------------|
 
 " You Complete Me ------------------------------------------------------------|
 " Stop making mistakes and hit Tab!
 imap <Tab> <C-P>
 let g:ycm_autoclose_preview_window_after_insertion = 1
 let g:ycm_autoclose_preview_window_after_completion = 1
-" ----------------------------------------------------------------------------|
+
+" Gundo : The Super Undo -----------------------------------------------------|
+" toggle gundo
+nnoremap <leader>u :GundoToggle<CR>
 
