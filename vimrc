@@ -92,6 +92,10 @@ let g:ycm_autoclose_preview_window_after_insertion = 1
 let g:ycm_autoclose_preview_window_after_completion = 1
 
 " Gundo : The Super Undo -----------------------------------------------------|
+" make gundo usable for python 3
+if has('python3')
+    let g:gundo_prefer_python3 = 1
+endif
 " toggle gundo
 nnoremap <leader>u :GundoToggle<CR>
 
