@@ -83,11 +83,12 @@ function is_server {
 }
 
 cd "$ROOT"
+# install all pathogen plugins and update submodules
 git submodule init
 git submodule update
 
 # Vroom vroom!
-install_dot "gitconfig"
+# install_dot "gitconfig"
 install_dot "screenrc"
 install_dot "tmux.conf"
 install_dot "vim"
