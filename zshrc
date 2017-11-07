@@ -96,10 +96,7 @@ workfile=".zshrc.symbio"
 if [ -f "$workfile" ]
 then
     source ~/.zshrc.symbio
-    fi
+fi
 
-    # spaceship theme
-    source "/home/changeme/.oh-my-zsh/custom/themes/spaceship.zsh-theme"
-
-
+# Spaceship theme
 source "/home/changeme/.oh-my-zsh/custom/themes/spaceship.zsh-theme"
