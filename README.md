@@ -24,3 +24,12 @@ To install YouCompleteMe:
 cd ~/.vim/bundle/YouCompleteMe
 ./install.py --all
 ```
+### Future Improvements
+* Transition to Vundle from Pathogen  
+Pathogen way to version control utilized git submodules. Vundle requires 
+plugin calls in your vimrc files which is a little more elegant.
+
+* Transition to Antigen from Oh-my-zsh  
+Antigen is built with inspiration of oh-my-zsh and pathogen. However, it 
+is tries to avoid the bloat of oh-my-zsh using Vundle inspired plugin calls.
+
