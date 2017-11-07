@@ -1,5 +1,5 @@
 # Rahul Rawat's Dotfiles
----------------------------------------------------------------------------
+
 A collection of the dotfiles used on my work and home Linux machines.
 
 To use the dotfiles:
