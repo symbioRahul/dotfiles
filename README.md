@@ -29,7 +29,10 @@ cd ~/.vim/bundle/YouCompleteMe
 Pathogen way to version control utilized git submodules. Vundle requires 
 plugin calls in your vimrc files which is a little more elegant.
 
-* Transition to Antigen from Oh-my-zsh  
+* Transition to Antigen from Oh-my-zsh   
 Antigen is built with inspiration of oh-my-zsh and pathogen. However, it 
 is tries to avoid the bloat of oh-my-zsh using Vundle inspired plugin calls.
 
+* Fix work zshrc source bug 
+At some times zshrc.symbio is not found hence you are unable to access all
+of the company specific aliases and paths.
