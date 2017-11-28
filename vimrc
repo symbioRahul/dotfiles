@@ -99,3 +99,6 @@ endif
 " toggle gundo
 nnoremap <leader>u :GundoToggle<CR>
 
+" toggle NerdTREE
+nnoremap <leader>n :NERDTreeToggle<CR>
+
