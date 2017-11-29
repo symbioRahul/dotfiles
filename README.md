@@ -36,3 +36,5 @@ is tries to avoid the bloat of oh-my-zsh using Vundle inspired plugin calls.
 * Fix work zshrc source bug 
 At some times zshrc.symbio is not found hence you are unable to access all
 of the company specific aliases and paths.
+
+* Fix autosuggestions bug
