@@ -86,19 +86,27 @@ nnoremap / :let @/ = ""<CR>:call gruvbox#hls_show()<CR>/
 nnoremap ? :let @/ = ""<CR>:call gruvbox#hls_show()<CR>?
 
 " You Complete Me ------------------------------------------------------------|
-" Stop making mistakes and hit Tab!
+"   Stop making mistakes and hit Tab!
 imap <Tab> <C-P>
 let g:ycm_autoclose_preview_window_after_insertion = 1
 let g:ycm_autoclose_preview_window_after_completion = 1
 
 " Gundo : The Super Undo -----------------------------------------------------|
-" make gundo usable for python 3
+"   make gundo usable for python 3
 if has('python3')
     let g:gundo_prefer_python3 = 1
 endif
-" toggle gundo
+"   toggle gundo
 nnoremap <leader>u :GundoToggle<CR>
 
-" toggle NerdTREE
+"   toggle NerdTREE
 nnoremap <leader>n :NERDTreeToggle<CR>
 
+" Asynchronous Lint Engine ---------------------------------------------------|
+"   Put this in vimrc or a plugin file of your own.
+let g:ale_fixers = {
+\   'javascript': ['eslint'],
+\   'p                                 ython':['flake8','pylint'],
+\}
+"   Run ALELint when you text is changed
+let g:ale_lint_on_text_changed = 1
