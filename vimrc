@@ -102,11 +102,3 @@ nnoremap <leader>u :GundoToggle<CR>
 "   toggle NerdTREE
 nnoremap <leader>n :NERDTreeToggle<CR>
 
-" Asynchronous Lint Engine ---------------------------------------------------|
-"   Put this in vimrc or a plugin file of your own.
-let g:ale_fixers = {
-\   'javascript': ['eslint'],
-\   'p                                 ython':['flake8','pylint'],
-\}
-"   Run ALELint when you text is changed
-let g:ale_lint_on_text_changed = 1
