@@ -99,6 +99,13 @@ endif
 "   toggle gundo
 nnoremap <leader>u :GundoToggle<CR>
 
-"   toggle NerdTREE
+" NerdTREE -------------------------------------------------------------------|
 nnoremap <leader>n :NERDTreeToggle<CR>
 
+" Powerline Setup ------------------------------------------------------------|
+python from powerline.vim import setup as powerline_setup
+python powerline_setup()
+python del powerline_setup
+
+" Airline & Airline-Theme ----------------------------------------------------|
+let g:airline_powerline_fonts = 1  "Let powerline fonts map to airline dict
