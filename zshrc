@@ -53,7 +53,7 @@ ZSH_THEME="robbyrussell"
 
 # Would you like to use another custom folder than $ZSH/custom?
 # ZSH_CUSTOM=/path/to/new-custom-folder
-ZSH_CUSTOM= /home/$USER/dotfiles/zsh/plugins
+ZSH_CUSTOM=~/dotfiles/zsh/plugins
 
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
@@ -104,7 +104,6 @@ fi
 
 # Spaceship theme
 source "/home/$USER/.oh-my-zsh/custom/themes/spaceship.zsh-theme"
-
 
 # Autosuggestions highlighting
 ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=6'

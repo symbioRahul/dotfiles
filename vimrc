@@ -103,9 +103,12 @@ nnoremap <leader>u :GundoToggle<CR>
 nnoremap <leader>n :NERDTreeToggle<CR>
 
 " Powerline Setup ------------------------------------------------------------|
-python from powerline.vim import setup as powerline_setup
-python powerline_setup()
-python del powerline_setup
+set rtp+=/usr/local/lib/python2.7/dist-packages/powerline/bindings/vim/
+" Always show statusline
+set laststatus=2
+" Use 256 colours (Use this setting only if your terminal supports 256 colours)
+set t_Co=256
 
 " Airline & Airline-Theme ----------------------------------------------------|
 let g:airline_powerline_fonts = 1  "Let powerline fonts map to airline dict
+
