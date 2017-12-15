@@ -86,19 +86,29 @@ nnoremap / :let @/ = ""<CR>:call gruvbox#hls_show()<CR>/
 nnoremap ? :let @/ = ""<CR>:call gruvbox#hls_show()<CR>?
 
 " You Complete Me ------------------------------------------------------------|
-" Stop making mistakes and hit Tab!
+"   Stop making mistakes and hit Tab!
 imap <Tab> <C-P>
 let g:ycm_autoclose_preview_window_after_insertion = 1
 let g:ycm_autoclose_preview_window_after_completion = 1
 
 " Gundo : The Super Undo -----------------------------------------------------|
-" make gundo usable for python 3
+"   make gundo usable for python 3
 if has('python3')
     let g:gundo_prefer_python3 = 1
 endif
-" toggle gundo
+"   toggle gundo
 nnoremap <leader>u :GundoToggle<CR>
 
-" toggle NerdTREE
+" NerdTREE -------------------------------------------------------------------|
 nnoremap <leader>n :NERDTreeToggle<CR>
+
+" Powerline Setup ------------------------------------------------------------|
+set rtp+=/usr/local/lib/python2.7/dist-packages/powerline/bindings/vim/
+" Always show statusline
+set laststatus=2
+" Use 256 colours (Use this setting only if your terminal supports 256 colours)
+set t_Co=256
+
+" Airline & Airline-Theme ----------------------------------------------------|
+let g:airline_powerline_fonts = 1  "Let powerline fonts map to airline dict
 
