@@ -8,6 +8,7 @@ cd
 git clone https://github.com/rahulraw/dotfiles.git
 cd dotfiles 
 ./infectdots.sh
+submodule update --init --recursive
 ```
 
 This install script does the following things: 
@@ -38,3 +39,8 @@ At some times zshrc.symbio is not found hence you are unable to access all
 of the company specific aliases and paths.
 
 * Fix autosuggestions bug
+
+* ALE not working in new setups
+
+* Uses Powerline by default
+Find way to set powerline setting if available
