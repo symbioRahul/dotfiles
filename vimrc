@@ -1,6 +1,6 @@
 " .Vimrc
-" Maintainer : Rahul Rawat
-" Email : mail@rahulrawat.net
+" Maintainer:Rahul Rawat
+" Email: mail@rahulrawat.net
 "
 " To start vim without using this .vimrc file, use:
 "     vim -u NORC

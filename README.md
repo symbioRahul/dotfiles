@@ -34,10 +34,6 @@ plugin calls in your vimrc files which is a little more elegant.
 Antigen is built with inspiration of oh-my-zsh and pathogen. However, it 
 is tries to avoid the bloat of oh-my-zsh using Vundle inspired plugin calls.
 
-* Fix work zshrc source bug 
-At some times zshrc.symbio is not found hence you are unable to access all
-of the company specific aliases and paths.
-
 * Fix autosuggestions bug
 
 * ALE not working in new setups
