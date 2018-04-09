@@ -25,6 +25,17 @@ To install YouCompleteMe:
 cd ~/.vim/bundle/YouCompleteMe
 ./install.py --all
 ```
+
+### Known Issues
+
+* Powerline does not always work as intended. Look through the Powerline installation
+guide on github
+
+* Powerline will show weird icons by default in the powerline bar
+
+* If there is errors involving vim error due to commaents in the vimrc, restarting
+your computer can fix the problems. Thanks Linus! 
+
 ### Future Improvements
 * Transition to Vundle from Pathogen  
 Pathogen way to version control utilized git submodules. Vundle requires 
