@@ -31,9 +31,10 @@ cd ~/.vim/bundle/YouCompleteMe
 * Powerline does not always work as intended. Look through the Powerline installation
 guide on github
 
-* Powerline will show weird icons by default in the powerline bar
+* Powerline will show weird icons by default in the powerline bar. Set the powerline 
+mapping to 0 to fix this.
 
-* If there is errors involving vim error due to commaents in the vimrc, restarting
+* If there is errors involving a "vim error" due to comments in the vimrc, restarting
 your computer can fix the problems. Thanks Linus! 
 
 ### Future Improvements
