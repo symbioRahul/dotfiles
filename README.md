@@ -2,6 +2,13 @@
 
 A collection of the dotfiles used on my work and home Linux machines.
 
+Prerequisites:
+```
+sudo apt-get install tmux
+sudo apt-get install vim
+sudo apt-get isntall zsh
+```
+
 To use the dotfiles:
 ```bash
 cd
