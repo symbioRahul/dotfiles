@@ -66,6 +66,8 @@ set clipboard=unnamed           " normal OS clipboard interaction
 set autoread                    " automatically reload files changed outside of Vim
 let mapleader=","               " leader is comma
 
+set backupdir=$HOME/.vim/.backup//
+set directory=$HOME/.vim/.swp//
 
 " Toggle show/hide invisible chars
 nnoremap <leader>i :set list!<cr>
@@ -104,11 +106,12 @@ nnoremap <leader>n :NERDTreeToggle<CR>
 
 " Powerline Setup ------------------------------------------------------------|
 set rtp+=/usr/local/lib/python2.7/dist-packages/powerline/bindings/vim/
+set rtp+=/usr/local/lib/python3.5/dist-packages/powerline/bindings/vim/
 " Always show statusline
 set laststatus=2
 " Use 256 colours (Use this setting only if your terminal supports 256 colours)
 set t_Co=256
 
 " Airline & Airline-Theme ----------------------------------------------------|
-let g:airline_powerline_fonts = 1  "Let powerline fonts map to airline dict
+let g:airline_powerline_fonts = 1 "Let powerline fonts map to airline dict
 
