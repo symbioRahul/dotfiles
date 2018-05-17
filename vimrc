@@ -87,6 +87,11 @@ nnoremap * :let @/ = ""<CR>:call gruvbox#hls_show()<CR>*
 nnoremap / :let @/ = ""<CR>:call gruvbox#hls_show()<CR>/
 nnoremap ? :let @/ = ""<CR>:call gruvbox#hls_show()<CR>?
 
+" Custom Colors - ------------------------------------------------------------|
+" Add a ruler after 80 characters
+set colorcolumn=81
+highlight ColorColumn ctermbg=0 guibg=white
+
 " You Complete Me ------------------------------------------------------------|
 "   Stop making mistakes and hit Tab!
 imap <Tab> <C-P>
