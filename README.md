@@ -15,7 +15,7 @@ cd
 git clone https://github.com/rahulraw/dotfiles.git
 cd dotfiles 
 ./infectdots.sh
-submodule update --init --recursive
+git submodule update --init --recursive
 ```
 
 This install script does the following things: 
@@ -29,9 +29,10 @@ sudo apt-get install --assume-yes xclip
 
 To install YouCompleteMe:
 ```bash
-cd ~/.vim/bundle/YouCompleteMe
+cd ~/.vim/bundle/youcompleteme
 ./install.py --all
 ```
+Note: you may have to install python-dev before installing YouCompleteMe. To do so, use `sudo apt-get install python-dev`
 
 ### Known Issues
 
