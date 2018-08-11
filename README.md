@@ -45,6 +45,8 @@ mapping to 0 to fix this.
 * If there is errors involving a "vim error" due to comments in the vimrc, restarting
 your computer can fix the problems. Thanks Linus! 
 
+* If your vim is not set up the way you want it to be, you may need to delete the ~/.vim/ folder and rerun ./infectdots.sh. This problem is due to vim installing a .vim folder which is not being linked properly.
+
 ### Future Improvements
 * Transition to Vundle from Pathogen  
 Pathogen way to version control utilized git submodules. Vundle requires 
