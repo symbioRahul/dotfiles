@@ -44,6 +44,8 @@ mapping to 0 to fix this.
 * If there is errors involving a "vim error" due to comments in the vimrc, restarting
 your computer can fix the problems. Thanks Linus! 
 
+* ALE has issue not used on Vim 8.0+
+
 ### Future Improvements
 * Transition to Vundle from Pathogen  
 Pathogen way to version control utilized git submodules. Vundle requires 
