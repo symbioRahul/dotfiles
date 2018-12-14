@@ -107,6 +107,13 @@ fi
 
 # Autosuggestions highlighting
 
+# source /opt/ros/kinetic/setup.zsh
+# source /home/rahul/catkin_ws/devel/setup.zsh
+
 function kukaput() {
     ncftpput -m -u Kuka -p kuka -a $1 SYMBIO *.src *.xml
 }
+export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:$(openrave-config --python-dir)/openravepy/_openravepy_
+export PYTHONPATH=$PYTHONPATH:$(openrave-config --python-dir)
+export PATH="$HOME/anaconda3/bin:$PATH"
+
