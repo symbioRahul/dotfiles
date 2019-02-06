@@ -15,7 +15,7 @@ cd
 git clone https://github.com/rahulraw/dotfiles.git
 cd dotfiles 
 ./infectdots.sh
-submodule update --init --recursive
+git submodule update --init --recursive
 ```
 
 This install script does the following things: 
@@ -29,9 +29,10 @@ sudo apt-get install --assume-yes xclip
 
 To install YouCompleteMe:
 ```bash
-cd ~/.vim/bundle/YouCompleteMe
+cd ~/.vim/bundle/youcompleteme
 ./install.py --all
 ```
+Note: you may have to install python-dev before installing YouCompleteMe. To do so, use `sudo apt-get install python-dev`
 
 ### Known Issues
 
@@ -44,7 +45,8 @@ mapping to 0 to fix this.
 * If there is errors involving a "vim error" due to comments in the vimrc, restarting
 your computer can fix the problems. Thanks Linus! 
 
-* ALE has issue not used on Vim 8.0+
+* If your vim is not set up the way you want it to be, you may need to delete the ~/.vim/ folder and rerun ./infectdots.sh. This problem is due to vim installing a .vim folder which is not being linked properly.
+* ALE issue is solved by using Vim 8.0+
 
 ### Future Improvements
 * Transition to Vundle from Pathogen  
