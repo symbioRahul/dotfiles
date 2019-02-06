@@ -7,7 +7,7 @@ export ZSH=$HOME/.oh-my-zsh
 # Set name of the theme to load. Optionally, if you set this to "random"
 # it'll load a random theme each time that oh-my-zsh is loaded.
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
-ZSH_THEME="amuse"
+ZSH_THEME="robbyrussell"
 
 # Set list of themes to load
 # Setting this variable when ZSH_THEME=random
@@ -93,7 +93,7 @@ alias zshconfig="mate ~/.zshrc"
 alias ohmyzsh="mate ~/.oh-my-zsh"
 
 # Look for work only zshrc file
-workfile=~/.zshrc.symbio
+workfile=~/.symbio_env
 if [ -f "$workfile" ]
 then
     # echo "$workfile found"
@@ -106,4 +106,14 @@ fi
 # source "/home/$USER/.oh-my-zsh/custom/themes/spaceship.zsh-theme"
 
 # Autosuggestions highlighting
-source /opt/ros/kinetic/setup.zsh
+
+# source /opt/ros/kinetic/setup.zsh
+# source /home/rahul/catkin_ws/devel/setup.zsh
+
+function kukaput() {
+    ncftpput -m -u Kuka -p kuka -a $1 SYMBIO *.src *.xml
+}
+export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:$(openrave-config --python-dir)/openravepy/_openravepy_
+export PYTHONPATH=$PYTHONPATH:$(openrave-config --python-dir)
+export PATH="$HOME/anaconda3/bin:$PATH"
+

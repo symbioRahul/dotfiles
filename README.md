@@ -46,6 +46,7 @@ mapping to 0 to fix this.
 your computer can fix the problems. Thanks Linus! 
 
 * If your vim is not set up the way you want it to be, you may need to delete the ~/.vim/ folder and rerun ./infectdots.sh. This problem is due to vim installing a .vim folder which is not being linked properly.
+* ALE issue is solved by using Vim 8.0+
 
 ### Future Improvements
 * Transition to Vundle from Pathogen  
